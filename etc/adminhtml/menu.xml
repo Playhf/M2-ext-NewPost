@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Aws_Newpost::shipping"
+             title="Новая почта"
+             module="Aws_Newpost"
+             dependsOnModule="Magento_Sales"
+             resource="Magento_Backend::content"
+             sortOrder="45"/>
+        <add id="Aws_Newpost::city_list"
+             module="Aws_Newpost"
+             parent="Aws_Newpost::shipping"
+             resource="Aws_Newpost::city"
+             action="newpost/city/list"
+             title="Города"
+             sortOrder="1" />
+        <add id="Aws_Newpost::warehouse_list"
+             module="Aws_Newpost"
+             parent="Aws_Newpost::shipping"
+             resource="Aws_Newpost::warehouse"
+             action="newpost/warehouse/list"
+             title="Склады"
+             sortOrder="2" />
+    </menu>
+</config>

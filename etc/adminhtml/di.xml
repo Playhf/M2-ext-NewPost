@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="weightUnitForStore" type="Magento\Eav\Model\Entity\Attribute\Source\Config">
+        <arguments>
+            <argument name="options" xsi:type="array">
+                <item name="0" xsi:type="array">
+                    <item name="value" xsi:type="string">kg</item>
+                    <item name="label" xsi:type="string">Kilograms</item>
+                </item>
+                <item name="1" xsi:type="array">
+                    <item name="value" xsi:type="string">gr</item>
+                    <item name="label" xsi:type="string">Grams</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="citySenderList" type="Magento\Eav\Model\Entity\Attribute\Source\Config">
+        <arguments>
+            <argument name="options" xsi:type="array">
+                <item name="0" xsi:type="array">
+                    <item name="value" xsi:type="string">kiev</item>
+                    <item name="label" xsi:type="string">Kiev</item>
+                </item>
+                <item name="1" xsi:type="array">
+                    <item name="value" xsi:type="string">kharkiv</item>
+                    <item name="label" xsi:type="string">Kharkiv</item>
+                </item>
+                <item name="2" xsi:type="array">
+                    <item name="value" xsi:type="string">dnipro</item>
+                    <item name="label" xsi:type="string">Dnipro</item>
+                </item>
+                <item name="3" xsi:type="array">
+                    <item name="value" xsi:type="string">odessa</item>
+                    <item name="label" xsi:type="string">Odessa</item>
+                </item>
+                <item name="4" xsi:type="array">
+                    <item name="value" xsi:type="string">lviv</item>
+                    <item name="label" xsi:type="string">Lviv</item>
+                </item>
+                <item name="5" xsi:type="array">
+                    <item name="value" xsi:type="string">zaporizhia</item>
+                    <item name="label" xsi:type="string">Zaporizhia</item>
+                </item>
+                <item name="6" xsi:type="array">
+                    <item name="value" xsi:type="string">sumy</item>
+                    <item name="label" xsi:type="string">Sumy</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
